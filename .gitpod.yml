@@ -1,0 +1,26 @@
+# The Docker image to run your workspace in. Defaults to gitpod/workspace-full
+image:
+  file: 
+    .gitpod.Dockerfile
+
+#tasks:
+#  - init: yarn install
+#  - command: yarn build
+#  - command: "npm install && npm run serve"
+# 
+# Ports to expose on workspace startup (optional)
+# ports:
+#   - port: 5000
+#     onOpen: ignore
+#   - port: 5900
+#     onOpen: ignore
+#   - port: 6080
+#     onOpen: ignore
+# 
+# Command to add your extensions
+vscode:
+  extensions:
+    - formulahendry.code-runner@0.9.17:/CI2LS8o4IE980vinLu1Yg==
+    - vscode-icons-team.vscode-icons@9.7.0:vWMZFN0zy+UAVL2V5iuz4A==
+    - formulahendry.dotnet-test-explorer@0.7.1:aMBBHLwB96Y4mOqZ8ucTKw==
+    - redhat.vscode-yaml@0.6.1:Lngx1V8Nd6ig2dgVcDntyQ==
