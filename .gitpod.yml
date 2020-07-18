@@ -8,14 +8,34 @@ image:
 #  - command: yarn build
 #  - command: "npm install && npm run serve"
 # 
+# 
+github:
+  prebuilds:
+    # enable for the master/default branch (defaults to true)
+    master: true
+# enable for all branches in this repo (defaults to false)
+    branches: false
+# enable for pull requests coming from this repo (defaults to true)
+    pullRequests: true
+# enable for pull requests coming from forks (defaults to false)
+    pullRequestsFromForks: false
+# add a check to pull requests (defaults to true)
+    addCheck: true
+# add a "Review in Gitpod" button as a comment to pull requests (defaults to false)
+    addComment: false
+# add a "Review in Gitpod" button to the pull request's description (defaults to false)
+    addBadge: false
+# add a label once the prebuild is ready to pull requests (defaults to false)
+    addLabel: false
+#
 # Ports to expose on workspace startup (optional)
-# ports:
-#   - port: 5000
-#     onOpen: ignore
-#   - port: 5900
-#     onOpen: ignore
-#   - port: 6080
-#     onOpen: ignore
+ports:
+  - port: 5000
+    onOpen: ignore
+  - port: 5900
+    onOpen: ignore
+  - port: 6080
+    onOpen: ignore
 # 
 # Command to add your extensions
 vscode:
@@ -24,3 +44,69 @@ vscode:
     - vscode-icons-team.vscode-icons@9.7.0:vWMZFN0zy+UAVL2V5iuz4A==
     - formulahendry.dotnet-test-explorer@0.7.1:aMBBHLwB96Y4mOqZ8ucTKw==
     - redhat.vscode-yaml@0.6.1:Lngx1V8Nd6ig2dgVcDntyQ==
+    - blairleduc.net-core-starters-pack@1.1.0:7mshfWZxI70Csou6S5OZ5g==
+    - adrianwilczynski.add-reference@1.0.2:txR1WE01eH6JEojtuekxFQ==
+    - adrianwilczynski.asp-net-core-switcher@2.0.2:/OcpAa9EZqn0U4NG+fDHpg==
+    - boundarystudio.csharp-extentions-pack@0.2.4:Qy/h/4Xzu+2b/P3GHZ5Tuw==
+    - dannymcgee.csharp-grammar-extended@1.1.1:dU3xbg4r3fhtltHGFodC5g==
+    - formulahendry.dotnet@0.0.4:BDL7fFzO1JaD/56bYMX4pg==
+    - formulahendry.code-runner@0.9.17:/CI2LS8o4IE980vinLu1Yg==
+    - leo-labs.dotnet@1.0.3:YR8ZjeV+0/Ut87luga8WGw==
+    - jorgeserrano.vscode-csharp-snippets@0.3.1:DRjnkQ2XYPXprrvtxE5t7g==
+    - formulahendry.dotnet-test-explorer@0.7.1:aMBBHLwB96Y4mOqZ8ucTKw==
+    - ms-dotnettools.csharp@1.21.17:5/iI88WHX4j3iL5jASDTYQ==
+    - thiagorjes.csharpwebapi@0.7.5:PgPBe5cdeLMtPQ8TGjuHug==
+    - vain0x.csharp-gen-ctor@1.3.0:xDGxzA5oYauStK4afOms6A==
+    - dracula-theme.theme-dracula@2.22.1:acEEGtphPo3sp9+wXQiSyw==
+    - 2gua.rainbow-brackets@0.0.6:Tbu8dTz0i+/bgcKQTQ5b8g==
+    - formulahendry.auto-close-tag@0.5.8:CDi+j7vz+JbA+ZAPgKA4kw==
+    - formulahendry.auto-rename-tag@0.1.4:L2UiSNcPmh2whCGltY71/A==
+    - humao.rest-client@0.24.1:ggeyvIVSWsjotnh1tr2HMw==
+    - donjayamanne.githistory@0.6.8:PtWdYvm3/G41F26Gt2E9Ng==
+    - eamodio.gitlens@10.2.2:sHZo41prELczhieEg6YOAA==
+    - alefragnani.Bookmarks@11.3.1:AAcp3Enviq8V3qRliNNJKQ==
+    - VisualStudioExptTeam.vscodeintellicode@1.2.9:LdmiMXKN8640kj+gwklZLA==
+    - oderwat.indent-rainbow@7.4.0:nth8lnJRnQu9NcWvNc9KPA==
+    - streetsidesoftware.code-spell-checker@1.9.0:B0Usq/ATl+ohrSS731xRiA==
+    - awwsky.csharpfixformatfixed@0.0.85:UU9wB1GUBAuD7PSyX3Q1MQ==
+    - abusaidm.html-snippets@0.2.1:7b7Vkkp6Lem9WOqKCYMq2w==
+    - ecmel.vscode-html-css@0.2.3:RBTpzQbz8rn5KTlc82tnsQ==
+    - christian-kohler.npm-intellisense@1.3.0:yQtCdwoyo890Bn9NOEuEDA==
+    - dracula-theme.theme-dracula@2.22.1:rG1xEjXLhtkcSkMCWsRbzQ==
+    - dbaeumer.vscode-eslint@2.1.8:02aHhbJ0Q4aGdjHXlTdVKg==
+    - christian-kohler.path-intellisense@2.2.1:GUYwBShcwzd1CP4d0YhMmA==
+    - mgmcdermott.vscode-language-babel@0.0.29:S51DUCuN3aq2IN94LSDd9A==
+    - naumovs.color-highlight@2.3.0:6nKORbxgnWjNaN6xACiaQQ==
+    - HookyQR.beautify@1.5.0:mXo/OcopUVNHHxCPZWwlxQ==
+    - ms-dotnettools.csharp@1.22.1:mvOHUBhFWjLlqsyEsBx2qg==
+    - Mikael.Angular-BeastCode@8.1.2:mhd8UtJbsGDazjdWNkLewQ==
+    - mhutchie.git-graph@1.24.0:1YXb3C/Q2X3rk146GJk9WA==
+    - johnpapa.Angular2@9.1.2:zMaYqbaVrWgYWYWDtzoAqw==
+    - ms-vscode.vscode-typescript-tslint-plugin@1.2.3:MioHhlbqHKgivweg8MqHrA==
+    - GrapeCity.gc-excelviewer@3.0.38:9DAvxsR4+tCPMvNnnJK5ow==
+    - jchannon.csharpextensions@1.3.1:wF89VZ9isQulTthwVQCRig==
+    - xabikos.JavaScriptSnippets@1.8.0:lHHPH1wkjVDGGfSeLuNVwA==
+    - thekalinga.bootstrap4-vscode@6.1.0:duaQhthWtxWBzXAGe+5GKQ==
+    - streetsidesoftware.code-spell-checker-portuguese@0.1.2:aEGraoi3vC1XCKf+A57PRQ==
+    - mohsen1.prettify-json@0.0.3:BaUsxbzJiZx95JIB61O0Jw==
+    - DotJoshJohnson.xml@2.5.0:j/V3fdZHhHApG0UDF9KLqA==
+    - msjsdiag.debugger-for-chrome@4.12.9:LNVvylMvSHbUEG0wibb++w==
+    - michelemelluso.code-beautifier@2.3.3:aRVPC/UxkGF1U5lMncPQNw==
+    - tht13.html-preview-vscode@0.2.5:ZLi/N2Y+HF6yM7IPnUHBEw==
+    - vscode-icons-team.vscode-icons@10.2.0:ut23bRsXHaPWmq0NaTQ+1Q==
+    - redhat.vscode-yaml@0.9.1:FrNNWC50I8dsf86Xl5JchQ==
+    - Angular.ng-template@0.1000.4:iCKSjtWejOwQkiWkUbSdLw==
+    - dbaeumer.jshint@0.10.21:j1+d25dshkh6As9dAXw30Q==
+    - steoates.autoimport@1.5.3:ssEPucpXsRjqSbJX1bW0YA==
+    - Zignd.html-css-class-completion@1.19.0:b3YWQQIEP1z3u93nyLX0UA==
+    - mkaufman.HTMLHint@0.8.0:m0VywTd1QGZFom/lopAUFQ==
+    - pflannery.vscode-versionlens@1.0.8:BmTlaTARr7GL6QDB4BUUaQ==
+    - ms-mssql.mssql@1.9.0:po8dWdyP9miF808YKsp5Hg==
+    - pranaygp.vscode-css-peek@3.0.2:KkppHBMdjTfFipMc2nCvFA==
+    - rbbit.typescript-hero@3.0.0:Qt6da/zG4BFJn7VFBvbVag==
+    - Wscats.eno@2.3.2:Ov1kunpJjeN8Bdk7xTYesg==
+    - jolhe.csharp-netcore-extensionpack@1.0.0:RXF3kjONE0k4SXq5bgrP0A==
+    - doggy8088.netcore-extension-pack@0.10.0:M4lFL3f3+jFBtC3aDwDOKw==
+    - adrianwilczynski.asp-net-core-snippet-pack@1.51.0:EkIDOkeMcHsQ/e9XzzzddA==
+    - leo-labs.dotnet@1.2.0:ugNpbAMJ5r9KOAKr4fxsUw==
+    - jpahnen.dotnet-cli-wrapper@0.1.0:z3+eSAaVV7qXrnQRCyZl5Q==
