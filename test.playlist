@@ -1,0 +1,4 @@
+<Playlist Version="1.0">
+    <Add Test="Test.Api.Correios.Sucesso" />
+    <Add Test="Test.Api.Correios.Exception" />
+</Playlist>
